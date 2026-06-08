@@ -1,0 +1,84 @@
+    body{
+       background:  linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #111827
+      );
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+    .title {
+      font-size:48px;
+      font-weight: 700;
+      animation: float 3s ease-in-out infinite;
+      text-shadow: 0 0 15px rgba(255,255,255,0.3);
+    }
+    @keyframes float{
+      0%,100%{
+        transform: translateY(0);
+      }
+      50%{
+        transform: translateY(-5px);
+      }
+    }
+    .move-icon {
+      height: 50px;
+      transition: transform 0.3s;
+    }
+    .move-icon:hover {
+      transform: rotate(10deg) scale(1.2);
+    }
+    .move-button{
+      width:120px;
+      height:120px;
+      
+      background-color: rgba(255,255,255,0.04);
+      border: 3px solid white;
+      border-radius:60px;
+      cursor: pointer;
+      margin: 10px;
+      transition:all 0.3s ease;
+    }
+    .move-button:hover {
+      box-shadow: 0 0 25px rgba(255,255,255,0.1);
+      transform: scale(1.1);
+    }
+    .move-button:active{
+      transform: scale(0.95);
+    }
+    .result{
+      font-size: 30px;
+      font-weight: 700;
+      margin-top: 30px;
+    }
+    .score {
+      background: rgba(255,255,255,0.08);
+      margin-top: 20px;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 20px 30px;
+
+    }
+    .reset-button{
+      
+      background-color: #3b82f6;
+      color: white;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+      padding: 12px 20px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    .reset-button:hover {
+        transform:translateY(-2px);
+    }
+    .container {
+      padding: 40px;
+      border-radius: 25px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }

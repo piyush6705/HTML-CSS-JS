@@ -82,3 +82,21 @@
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
     }
+
+    .auto-play-button{
+      background-color: #3b82f6;
+      color: white;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+      padding: 12px 20px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+
+    }
+   
+    .auto-play-button:hover {
+        transform:translateY(-2px);
+    }
+    

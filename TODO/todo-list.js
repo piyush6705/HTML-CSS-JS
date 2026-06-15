@@ -20,10 +20,13 @@ function renderTodoList() {
   document.querySelectorAll('.js-delete-todo-button')
     .forEach((deleteButton, index) => {
       deleteButton.addEventListener('click', () => {
+       
         todoList.splice(index, 1);
         renderTodoList();
       });
     });
+
+    
 }
 
 document.querySelector('.js-add-todo-button')

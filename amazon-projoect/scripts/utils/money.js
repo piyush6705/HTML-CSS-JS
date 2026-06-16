@@ -1,6 +1,3 @@
-export function formatCurrency(cents) {
-  return new Intl.NumberFormat('en-US', {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  }).format(cents / 100);
+export function formatCurrency(priceCents) {
+  return (priceCents / 100).toFixed(2);
 }
